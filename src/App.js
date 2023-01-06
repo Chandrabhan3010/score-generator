@@ -26,7 +26,7 @@ function App() {
 
     if(scoreB > 0)
     {
-      localStorage.setItem("scoreB" , scoreB);
+      localStorage.setItem("scoreB",scoreB);
     }
   },[scoreA,scoreB])
 
@@ -39,7 +39,7 @@ function App() {
   return (
     <>
       <div className="score-keeper-container">
-        <img src={Imgbasketball} className="img-basket"></img>
+        <img src={Imgbasketball} alt="" className="img-basket"></img>
         <h2 className="score-keeper-heading">Basketball score keeper</h2>
 
         <div className="score-card-container">
