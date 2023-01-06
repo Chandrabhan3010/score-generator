@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect } from "react";
+import "./App.css";
+import Imgbasketball from "./basketball.gif";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="score-keeper-container">
+        <img src={Imgbasketball} className="img-basket"></img>
+        <h2 className="score-keeper-heading">Basketball score keeper</h2>
+
+        <div className="score-card-container">
+        <div className="score-card">
+          Team-A
+        </div>
+        <div className="score-card">
+          Team-B
+        </div>
+        </div>
+
+
+      </div>
+    </>
   );
 }
 
